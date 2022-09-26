@@ -11,8 +11,8 @@
     <string name="sync_status_conflict">Conflicto</string>
     <string name="login_api_key_hint">Clave de API</string>
     <plurals name="login_toast_dev_mode">
-        <item quantity="one">¡Esta a %1$d toque de desbloquear el modo de Desarrollador de ThermoGRID!</item>
-        <item quantity="other">¡Esta a %1$d toques de desbloquear el modo de Desarrollador de ThermoGRID!</item>
+        <item quantity="one">¡Esta a %1$d toque de desbloquear el modo de Desarrollador de MYAPP!</item>
+        <item quantity="other">¡Esta a %1$d toques de desbloquear el modo de Desarrollador de MYAPP!</item>
     </plurals>
 
     <string-array name="environment_array">
@@ -31,10 +31,10 @@
         <item quantity="other">%1$d horas</item>
     </plurals>
 
-    <string name="eci_terms_conditions">
+    <string name="app_terms_conditions">
         <![CDATA[<html>
         <body>
-        <b>THERMOGRID MOBILE APPLICATION END USER LICENSE AGREEMENT</b>\n
+        <b>MYAPP \"MOBILE APPLICATION\" END USER “LICENSE“ AGREEMENT</b>\n
         </body>
         </html>]]>
         </string>

@@ -9,6 +9,9 @@ type="string"
 
 outputFile="string-ios.txt"
 
+
+echo -n "" > $outputFile
+
 while read line; do 
     
 
@@ -66,13 +69,15 @@ while read line; do
     # WRITE VALUE
     if [[ $concatenating == "FALSE" ]]; then
       value=$(echo $line | sed 's/.*\">//; s/<\/string.*//')
-      if [ -n "$value" ]; then 
-        echo "\"$key\"=\"$value\"" >> $outputFile
+      if [ -n "$value" ]; then
+        value=$(echo "$value" | tr "\"" "“")
+        echo "\"$key\" = \"$value\"" >> $outputFile
       fi
 
     elif [[ $line == *"</string>"* || $line == *"</plurals>"* || $line == *"</string-array>"* ]]; then
       if [ -n "$concatenateValue" ]; then 
-        echo "\"$concatenateKey\"=\"$concatenateValue\"" >> $outputFile
+        concatenateValue=$(echo "$concatenateValue" | tr "\"" "“")
+        echo "\"$concatenateKey\" = \"$concatenateValue\"" >> $outputFile
       fi
       
       concatenateValue=""
