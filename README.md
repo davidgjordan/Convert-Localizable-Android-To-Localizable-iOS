@@ -6,7 +6,7 @@ Convert Localizable Android files(XML) to Localizable iOS files(string).
 ```sh
 $ git clone https://github.com/davidgjordan/Convert-Localizable-Android-To-Localizable-iOS.git
 ```
-2. Replace the content of string-android.xml file by your content.
+2. Replace the content of `string-android.xml` file by your content.
 3. Open a terminal and run the command.
 ```sh
 $ ./convert.sh
@@ -19,7 +19,7 @@ $ ./convert.sh
 Note: If any value contains `"`, it will be replaced by `“` to avoid compilation problems.
 
 
-#### Example Input:
+#### Example Input (`string-android.xml` file):
 
 ```sh
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +70,7 @@ Note: If any value contains `"`, it will be replaced by `“` to avoid compilati
 ```
 
 
-#### Example Output:
+#### Example Output (`string-ios.txt` file):
 ```sh
 "event_on_call_updated" = "¡En Llamada Actualizado!"
 "syncing_data" = "Sincronizando datos…"
