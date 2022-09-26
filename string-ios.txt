@@ -12,7 +12,6 @@
 "environment_array" = " <item>Produccion</item> <item>Entorno Aislado</item>"
 
 
-
 // <!-- Time Labels -->
 "minute_display" = " <item quantity=“one“>%1$d minuto</item> <item quantity=“other“>%1$d minutos</item>"
 "hour_display" = " <item quantity=“one“>%1$d hora</item> <item quantity=“other“>%1$d horas</item>"

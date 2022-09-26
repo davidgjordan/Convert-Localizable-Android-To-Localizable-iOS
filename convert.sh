@@ -18,7 +18,7 @@ while read line; do
     # IGNORE UNNECESSARY LINES
     if [[ $line == *"<?xml"* || $line == *"<resources"* || $line == *"<!--"*  || $line == *"</resources>"* ]]; then
       if [[ $line == *"<!--"* ]]; then
-        printf "\n\n\n// $line\n" >> $outputFile
+        printf "\n\n// $line\n" >> $outputFile
       fi
       continue
     fi
